@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Page clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+}
+
+.skills-list li {
+  background: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9LEBo8hRrY15oayQ7i-eRNOxwe7QiCbAE-Q&s" alt="User Photo" class="profile-img" />
+        <h1>Your Name</h1>
+        <p>Who are you?</p> <br>
+        <div class="social-links">
+          <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.github.com"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me!</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptatem animi. Rem quibusdam, ratione quos nobis qui iure ducimus, natus distinctio eius recusandae dignissimos deserunt nostrum suscipit, doloremque maiores omnis sed eos voluptate laudantium minus dolorem quaerat mollitia aut dolor! Odio dicta doloremque ea cum nostrum doloribus fugiat repellat excepturi consequatur totam repellendus temporibus nisi reprehenderit, id debitis explicabo dolorem?</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sequi officiis cum suscipit enim ullam?</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia ab in iure unde eligendi accusantium</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia ab in iure unde eligendi accusantium</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Four</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia ab in iure unde eligendi accusantium</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Five</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia ab in iure unde eligendi accusantium</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Project Six</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quia ab in iure unde eligendi accusantium</p>
+          <a href="https://www.github.com">Live Demo</a> | <a href="https://www.github.com">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Message sent! (But this is just a demo.)");
+});
+
+  </script>
+</body>
+</html>
